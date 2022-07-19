@@ -22,16 +22,16 @@ function center(){
 }
 
 function uppercase(){
-    document.getElementById("textarea").style.fontWeight = "uppercase";
+    document.getElementById("textarea").style.textTransform = "uppercase";
 
 
 }
 function lowercase(){
-    document.getElementById("textarea").style.fontWeight = "lowercase";
+    document.getElementById("textarea").style.textTransform = "lowercase";
 
 }
 function capitalize(){
-    document.getElementById("textarea").style.font = "capitalize";
+    document.getElementById("textarea").style.textTransform = "capitalize";
 
 
 }
