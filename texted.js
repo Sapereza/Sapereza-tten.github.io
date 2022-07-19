@@ -6,7 +6,7 @@ function italic(){
     document.getElementById("textarea").style.fontStyle = "italic";
 }
 
-function aleft(){
+function left(){
     document.getElementById("textarea").style.textAlign = "left";
 
 }
@@ -35,7 +35,11 @@ function capitalize(){
 
 
 }
-function clearScreen(){
-    document.getElementById("textarea").value=""
+function cleanScreen(){
+    document.getElementById("textarea").value="";
+    document.getElementById("textarea").style.fontWeight = "normal";
+    document.getElementById("textarea").style.textAlign = "left";
+    document.getElementById("textarea").style.fontStyle = "normal";
+    document.getElementById("textarea").style.textTransform = "none"
 
 }
