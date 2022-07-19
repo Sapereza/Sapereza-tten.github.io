@@ -5,6 +5,3 @@ function bold(){
 function italic(){
     document.getElementById("textarea").style.fontStyle="italic";
 }
-function aleft(){
-    document.
-}
