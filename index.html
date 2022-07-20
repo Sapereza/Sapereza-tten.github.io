@@ -16,23 +16,44 @@
         <section class="bg-amber-200 m-4 p-2 flex items-center flex-col">
            <!-- This is for the text editor-->
 
-           <div class="border-2 m-2 bg-rose-200 flex flex-row items-center w-11/12 grid grid-cols-9 px-4">
+           <div class="border-2 bg-rose-200 flex-row items-center w-9/12 grid grid-cols-9 p-2">
 
-                <input type="button" value="bold" onclick="bold()" class="m-2 border-2 border-violet-200 p-2 hover:bg-slate-300 bg-slate-100 rounded">
-                <input type="button" value="Italic" onclick="italic()" class="m-2 border-2 border-violet-200 p-2 hover:bg-slate-300 bg-slate-100 rounded">
+                <button type="button" onclick="bold()" class="m-2 border-2 border-violet-200 p-2 hover:bg-slate-300 bg-slate-100 rounded-lg w-9">
+                    <svg class="h-4 w-4 text-black"  width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">  <path stroke="none" d="M0 0h24v24H0z"/>  <path d="M7 5h6a3.5 3.5 0 0 1 0 7h-6z" />  <path d="M13 12h1a3.5 3.5 0 0 1 0 7h-7v-7" /></svg>
+                </button>
+
+                <button type="button" onclick="italic()"class="border-2 border-violet-200 p-2 hover:bg-slate-300 bg-slate-100 rounded-lg w-9">
+                    <svg class="h-4 w-4 text-black"  width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">  <path stroke="none" d="M0 0h24v24H0z"/>  <line x1="11" y1="5" x2="17" y2="5" />  <line x1="7" y1="19" x2="13" y2="19" />  <line x1="14" y1="5" x2="10" y2="19" /></svg>
+                </button>
                 
-                <!--Will add icons to the align buttons-->
+                <button type="button" onclick="left()" class="border-2 border-violet-200 p-2 hover:bg-slate-300 bg-slate-100 rounded-lg w-9">
+                    <svg class="h-4 w-4 text-black"  width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">  <path stroke="none" d="M0 0h24v24H0z"/>  <line x1="4" y1="6" x2="20" y2="6" />  <line x1="4" y1="12" x2="14" y2="12" />  <line x1="4" y1="18" x2="18" y2="18" /></svg>     
+                </button>
 
-                <input type="button" value="alignLeft" onclick="left()" class="m-2 border-2 border-violet-200 p-2 hover:bg-slate-300 bg-slate-100 rounded">
-                <input type="button" value="center" onclick="center()" class="m-2 border-2 border-violet-200 p-2 hover:bg-slate-300 bg-slate-100 rounded">
-                <input type="button" value="alignRight" onclick="aright()" class="m-2 border-2 border-violet-200 p-2 hover:bg-slate-300 bg-slate-100 rounded">
+                <button type="button" onclick="center()" class="border-2 border-violet-200 p-2 hover:bg-slate-300 bg-slate-100 rounded-lg w-9">
+                    <svg class="h-4 w-4 text-black"  width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">  <path stroke="none" d="M0 0h24v24H0z"/>  <line x1="4" y1="6" x2="20" y2="6" />  <line x1="8" y1="12" x2="16" y2="12" />  <line x1="6" y1="18" x2="18" y2="18" /></svg>
+                </button>
 
+                <button type="button" onclick="aright()" class="border-2 border-violet-200 p-2 hover:bg-slate-300 bg-slate-100 rounded-lg w-9">
+                    <svg class="h-4 w-4 text-black"  width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">  <path stroke="none" d="M0 0h24v24H0z"/>  <line x1="4" y1="6" x2="20" y2="6" />  <line x1="10" y1="12" x2="20" y2="12" />  <line x1="6" y1="18" x2="20" y2="18" /></svg>
+                </button>
 
-                <input type="button" value="Upper Case" onclick="uppercase()" class="m-2 border-2 border-violet-200 p-2 hover:bg-slate-300 bg-slate-100 rounded">
-                <input type="button" value="Lowercase" onclick="lowercase()" class="m-2 border-2 border-violet-200 p-2 hover:bg-slate-300 bg-slate-100 rounded">
-                <input type="button" value="Capitalize" onclick="capitalize()" class="m-2 border-2 border-violet-200 p-2 hover:bg-slate-300 bg-slate-100 rounded">
-                <input type="button" value="Clear Text" onclick="cleanScreen()" class="m-2 border-2 border-violet-200 p-2 hover:bg-slate-300 bg-slate-100 rounded">
-           
+                <button type="button" onclick="uppercase()" class="mx-2 border-2 border-violet-200 p-2 hover:bg-slate-300 bg-slate-100 rounded-lg">
+                    Uppercase
+                </button>
+
+                <button type="button" onclick="lowercase()" class="mx-2 border-2 border-violet-200 p-2 hover:bg-slate-300 bg-slate-100 rounded-lg">
+                    Lowercase
+                </button>
+                
+                <button type="button" onclick="capitalize()" class="mx-2 border-2 border-violet-200 p-2 hover:bg-slate-300 bg-slate-100 rounded-lg">
+                    Capitalize
+                </button>
+                                
+                <button type="button" onclick="cleanScreen()" class="mx-2 border-2 border-violet-200 p-2 hover:bg-slate-300 bg-slate-100 rounded-lg">
+                    Clear
+                </button>
+
             </div>
 
            <div>
